@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import { initMiniApp } from './init'
 
-const rootEl = document.getElementById('root');
+initMiniApp()
+
+const rootEl = document.getElementById('root')
 if (rootEl) {
-  const root = ReactDOM.createRoot(rootEl);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-  );
+	const root = ReactDOM.createRoot(rootEl)
+	root.render(
+		<React.StrictMode>
+			<App />
+		</React.StrictMode>,
+	)
 }
